@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/dfe65f3da9.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <title>Uday Singh</title>
+</head>
+
+<header class="header">
+    <h1 class="main__title">Uday Singh</h1>
+    <ul class="icon__heading">
+        <li class="icon__heading1">
+            <a href="https://github.com/Uday-Singh1">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        </li>
+        <li class="icon__heading2">
+             <a href="https://www.linkedin.com/in/uday-singh-6ab410240/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="icon__heading3">
+            <a href="mailto:udaysngjobs@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        </li>
+    </ul>
+    <div class="search-container">
+        <form class="search-form" onsubmit="search(event)">
+          <input type="text" id="search-input" placeholder="Zoeken...">
+          <button class="submit__search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    
+    <article class="direction__buttons">
+        <button class="direction__projects" onclick="scrollToProjects()">
+          <p>My Projects</p>
+        </button>
+
+        <a href="/img/Uday-Singh-CV.png">
+        <button class="direction__cv" >My CV</button>
+    </a> 
+       
+
+   
+      </article>
+      
+
+    <article class="floating__sidenav">
+        <i class="fa-solid fa-earth-europe floating__icon1"></i>
+        <i class="fa-solid fa-moon floating__icon2" id="js--darkmode"></i>
+        <i class="fa-solid fa-eye floating__icon3"></i>
+    </article>  
+    
+</header>
+
+
+
+
+<body>
+    <article class="contain__text">
+        <h1 class="typed" id="text"></h1>
+      </article>
+      
+    
+    <section class="profile__picture">
+        <article class="profile_container">
+            <img class="profile__size" src="/img/pfp-uday.webp" alt="">
+        </article>
+    
+    </section>
+
+ 
+
+   <section class="projects">
+    <article class="projects_div"></article>
+    <h3 class="project__heading">Mijn Projecten</h3>
+    <ul class="project__cards">
+        <li class="project__cards--first">
+            <img  class="project__first__pic"  src="./img/project-agenda.webp" alt="" srcset="">
+            <article class="button__bar">
+                <article class="view__code-buttons">
+                    <i class="fa-brands fa-github"></i> <p>View Source code -> </p>
+    
+                </article>
+            </article>
+        </li>
+        <li class="project__cards--second">
+            <img  class="project__second__pic"  src="./img/fancy-card.webp" alt="" srcset="">
+            <article class="button__bar">
+
+                <article class="view__code-buttons">
+                <i class="fa-brands fa-github"></i>
+                <p>View Source code -> </p>
+
+            </article>
+            </article>
+        </li>
+        <li class="project__cards--third">
+            <img  class="project__third__pic"  src="./img/encrypt.png" alt="" srcset="">
+            <article class="button__bar">
+
+                <article class="view__code-buttons">
+                    <i class="fa-brands fa-github"></i>
+                    <p>View Source code -> </p>
+    
+                </article>
+            </article>
+        </li>
+   
+    </ul>
+   </section>
+   <article class="button__wrapper">
+    <button class="view__more__button">View more</button>
+</article>
+
+<section class="skills__showcase">
+    <h1 class="my__skills__text">My Skills</h1>
+    <article class="skills__showcase__container">
+        <ul class="skills">
+            <li class="skill__sizes">
+                <figure class="flip-card" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner">
+                        <figcaption class="flip-card-front">
+                            <i class="fa-brands fa-html5" id="skill__icons"></i>
+                        </figcaption>
+                        <figcaption class="flip-card-back">
+                            <h4 class="skills__name__title">HTML</h4>
+                            <p class="skill__info">Hiermee draai ik zo een beetje alles dus het moet er wel bij horen, ik ben in staat om semantisch en gestructureerde html te schrijven
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </li>
+            <li class="skill__sizes">
+                <figure class="flip-card">
+                    <div class="flip-card-inner">
+                        <figcaption class="flip-card-front">
+                            <i class="fa-brands fa-js" id="skill__icons"></i>
+                        </figcaption>
+                        <figcaption class="flip-card-back">
+                            <h4 class="skills__name__title">JavaScript</h4>
+                            <p class="skill__info">Ik ben altijd nieuwsgierig naar javascript, het is heel leuk en ik probeer altijd wat te leren
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </li>
+            <li class="skill__sizes">
+                <figure class="flip-card">
+                    <div class="flip-card-inner">
+                        <figcaption class="flip-card-front">
+                            <i class="fa-brands fa-css3" id="skill__icons"></i>
+                        </figcaption>
+                        <figcaption class="flip-card-back">
+                            <h4 class="skills__name__title">CSS</h4>
+                            <p class="skill__info">Ik gebruik css echt altijd maar codeer via de scss versie
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </li>
+            <li class="skill__sizes">
+                <figure class="flip-card">
+                    <div class="flip-card-inner">
+                        <figcaption class="flip-card-front">
+                            <i class="fa-brands fa-sass" id="skill__icons"></i>
+                        </figcaption>
+                        <figcaption class="flip-card-back">
+                            <h4 class="skills__name__title" >Sass</h4>
+                            <p class="skill__info">Ik was gestard met css , 
+                                maar nu gebruik ik altijd sass
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </li>
+        </ul>
+    </article>
+</section>
+
+   
+   <!-- Custom Cursor
+	<article class="custom-cursor"></article>
+ -->
+
+</body>
+
+
+</html>

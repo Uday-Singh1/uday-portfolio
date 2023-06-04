@@ -1,0 +1,137 @@
+@use "./mixins";
+
+
+@media (max-width: 768px) {
+  .contain__text {
+    display: none;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 40rem;
+  height: 40rem;
+  @include mixins.flexCenter;
+
+
+.typed {
+  display: none;
+}
+
+.contain__text{
+  display: none;
+}
+}
+
+@media screen and (max-width: 62.5rem) {
+  .profile__picture{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    position: relative;
+    top: 2rem;
+    left: 0.5rem;
+
+  }
+
+  .profile__size{
+    height: 30rem;
+    width: 30rem;
+  }
+  
+  .profile_container{
+      width: 30rem;
+      height: 30rem;
+      @include mixins.flexCenter;
+      object-fit: contain; 
+
+  }
+  .project__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+
+ 
+    
+  }
+
+
+  .button__bar{
+    display: flex;
+   position: absolute;
+    height: 4rem;
+    width:4rem;
+    background-color: black;
+    border-radius: 0rem 0rem 0.1rem 0.1rem;
+    color: white;
+
+}
+
+.view__code-buttons{
+  cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+  
+}
+
+
+.typed {
+  display: none;
+}
+
+.contain__text{
+  display: none;
+}
+  
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  height: 0.1rem;
+  position: relative;
+  bottom: 3rem;
+
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  color: white;
+}
+
+.search-form input[type="text"] {
+  display: none;
+}
+
+.search-form input[type="text"]::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+
+.submit__search{
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 3rem;
+}
+}
