@@ -25,6 +25,7 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     font-family: sans-serif;
+    @include mixins.font-style;
 }
 
 .js--darkmode{
@@ -35,7 +36,6 @@ body {
 .header{
   justify-content: center;
   align-items: center;
-
     font-family: 'Amatic SC', cursive;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -49,6 +49,7 @@ body {
 }
 
 .main__title{
+  @include mixins.font-style;
 
   align-items: center;
   justify-content: center;
@@ -58,6 +59,7 @@ body {
 .direction__buttons{
   display: flex;
   margin-bottom: 2rem;
+  gap: 3rem;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -68,8 +70,21 @@ body {
   bottom: 6rem;
   background-color: black;
   color: white;
-  height: 5rem;
-  width: 9rem;
+  height: 5.5rem;
+  width: 11rem;
+  border-radius: 5%;
+  border: none; 
+  margin-left: 2rem;
+}
+
+
+.direction__contact{
+  position: relative;
+  bottom: 6rem;
+  background-color: black;
+  color: white;
+  height: 5.5rem;
+  width: 11rem;
   border-radius: 5%;
   border: none; 
   margin-left: 2rem;
@@ -80,12 +95,13 @@ body {
   bottom: 6rem;
   background-color: black;
   color: white;
-  height: 5rem;
-  width: 9rem;
+  height: 5.5rem;
+  width: 11rem;
   border-radius: 5%;
   border: none; 
   margin-left: 2rem;
 }
+
 
 .search-container {
     display: flex;
@@ -191,11 +207,12 @@ body{
 .project__cards {
     display: flex;
     flex-direction: row;
-    gap: 15rem;
+    justify-content: center;
+    gap: 6.4rem;
     list-style: none;
     position: relative;
     top: 18rem;
-    left: 9.6rem;
+    
   }
 
 .project__cards--first {
@@ -228,8 +245,8 @@ body{
 
 .project__third__pic{
   cursor: pointer;
-    height: 51rem;
-    width: 42rem;
+    height: 50rem;
+    width: 40rem;
     border-radius: 0.5rem;
     object-fit: cover;
 
@@ -258,7 +275,6 @@ body{
 .button__bar{
     display: flex;
    position: absolute;
-
     height: 4rem;
     width:40rem;
     background-color: black;
@@ -276,8 +292,8 @@ body{
     left: 1rem;
     font-size: 2.5rem;
     gap: 12rem;
-    font-family: sans-serif;
-  
+    @include mixins.font-style;
+
 }
 
 .button__wrapper{
@@ -344,15 +360,10 @@ body{
 }
 
 
-.contain__text{
-  display: inline-block;
-}
-
-
 .typed {
     display: flex;
     font-size: 4rem;
-    margin-left: 16rem;
+    padding-left: 2rem;
     margin-top: 20rem;
     overflow: hidden;
     white-space: nowrap;
@@ -371,16 +382,15 @@ body{
 
 
 
-
-  .skills__showcase{
+  .skills__showcase {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 55rem;
-    width: 100%;
+    flex-wrap: wrap;
+    height: 100vh;
   }
-
-  .my__skills__text{
+  
+  .my__skills__text {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
@@ -388,96 +398,228 @@ body{
     color: white;
     font-size: 5rem;
     position: relative;
-    bottom: 26rem;
-    left: 57rem;
- 
+    top: 13rem;
+  }
   
-    
+  .skills__showcase__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Gebruik een grid met automatische kolombreedte */
+    grid-gap: 3rem;
+    max-width: 100%;
+    width: 100%;
   }
-
-
-  .skills__showcase__container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 30rem;
-      max-width: 100%;
-
-  }
-  .skills{
+  
+  .skills {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     align-items: center;
     background: rgb(150, 31, 31);
-    height:40rem;
-    width: 100rem;
+    height: 40rem;
+    width: 100%;
+    max-width: 100rem;
     list-style: none;
-    margin-right: 15rem;
-    border-radius: 10px 10px 10px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1rem;
   }
-
-  .skill__sizes{
+  
+  .skill__sizes {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 9rem;
     font-size: 8rem;
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     height: 30rem;
     background: rgb(23, 24, 23);
     color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 1rem;
   }
-
-
+  
   .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 200px;
-    perspective: 1000px; /* Verwijder dit als je het 3D-effect niet wilt */
-}
-
-.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-
-
-
-.flip-card-front,
-.flip-card-back {
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
-}
-
-.flip-card-front {
-    
+  }
+  
+  .flip-card-front {
     color: rgb(255, 255, 255);
-}
-
-.flip-card-back {
-  font-size: 3rem;
+  }
+  
+  .flip-card-back {
+    font-size: 3rem;
     color: white;
     transform: rotateY(180deg);
+  }
+  
+  .skill__info {
+    font-size: 2rem;
+    position: relative;
+    bottom: 2rem;
+  }
+  
+  .skills__name__title {
+    position: relative;
+    bottom: 2rem;
+  }
+
+
+
+.about__me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 25rem;
+  width: 90rem;
+  color: white;
+  gap: 3rem;
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 
-.skill__info{
-  font-size: 2rem;
-  position: relative;
-  bottom: 2rem;
+.about__who {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30rem;
+  font-size: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
-.skills__name__title{
-  position: relative;
-  bottom: 2rem;
+.about__info {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  font-size: 2.7rem;
+  padding-right: 1rem ;
 }
+
+.mijn__cv__extra{
+  color: black;
+  text-decoration: underline;
+  border: none;
+}
+
+.read__more{
+  cursor: pointer;
+  border: none;
+  margin-top: 2rem;
+  height: 7rem;
+  width: 18rem;
+  color: white;
+  background-color: black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+.read__more__a{
+  color: white;
+}
+
+
+.contact__me {
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.contact__me__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  padding-left: 7.1rem;
+  gap: 2rem;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 10px;
+  height: 5rem;
+  width: 100%;
+}
+
+.contact__form input[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.footer__icons{
+  background-color: black;
+  margin-right: 1rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 35rem;
+  height: 10rem;
+  max-width: 100%;
+  background: rgb(182, 4, 4);
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  font-size: 3.5rem;
+  @include mixins.font-style;
+
+}
+

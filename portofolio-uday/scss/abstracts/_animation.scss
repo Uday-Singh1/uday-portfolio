@@ -2,10 +2,7 @@
 @use "./mediaqueries";
 @use "./mixins";
 
-a:link, a:visited:hover {
-  color: rgb(9, 9, 9);
-   text-decoration: none;
-   }
+
 
 
    .main__title{
@@ -38,6 +35,8 @@ a:link, a:visited:hover {
   }
 
 
+
+  
 
 .icon__heading1{
 
@@ -87,6 +86,16 @@ a:link, a:visited:hover {
   }
 }
 
+.contact__form input[type="submit"] {
+  &:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(35, 32, 32);
+    transition: 0.3s;
+  }
+}
+
+
 .direction__projects{
   &:hover{
     cursor: pointer;
@@ -105,6 +114,15 @@ a:link, a:visited:hover {
   }
 }
 
+
+.direction__contact{
+  &:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(35, 32, 32);
+    transition: 0.3s;
+  }
+}
 
 .project__heading {
     position: relative;
@@ -198,6 +216,10 @@ a:link, a:visited:hover {
   transition: ease-in 0.4s;
 }
 
+.project__links:hover{
+  color: red;
+  transition: ease-in 0.4s;
+}
 
 .floating__icon1{
     
@@ -330,6 +352,39 @@ a:link, a:visited:hover {
     }
   }
 
+  .about__who {
+    &:hover{
+      cursor: default;
+      color: black;
+      text-decoration: underline;
+      transition: 0.3s;
+    }
+  }
+
+  .mijn__cv__extra{
+   &:hover{
+    color: black;
+    text-decoration: underline;
+    transition: 0.3s;
+   }
+  
+  }
+
+  .read__more{
+    &:hover{
+      color: white;
+      text-decoration: underline;
+      transition: 0.3s;
+     }
+  }
+
+  .read__more__a{
+    &:hover{
+      color: white;
+      text-decoration: underline;
+      transition: 0.3s;
+     }
+  }
 
 
   //Custom Cursor

@@ -44,6 +44,113 @@ body {
 }
 
 @media screen and (max-width: 62.5rem) {
+  .header {
+    justify-content: center;
+    align-items: center;
+    font-family: "Amatic SC", cursive;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(182, 4, 4);
+    height: 15rem;
+    max-width: 100%;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    border: solid black 1rem 1rem 1rem;
+  }
+  .main__title {
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+  }
+  .direction__buttons {
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .direction__projects {
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none;
+  }
+  .direction__cv {
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none;
+    margin-left: 2rem;
+  }
+  .direction__contact {
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none;
+    margin-left: 2rem;
+  }
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    height: 0.1rem;
+    position: relative;
+    bottom: 3rem;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    color: white;
+  }
+  .search-form input[type=text] {
+    cursor: text;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 4rem;
+    border: none;
+    height: 4rem;
+    width: 18rem;
+    padding-left: 2rem;
+  }
+  .search-form input[type=text]::placeholder {
+    color: rgb(0, 0, 0);
+  }
+  .submit__search {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+  }
+  .icon__heading {
+    display: flex;
+    justify-content: center;
+    font-size: 4.2rem;
+    flex-direction: row;
+    list-style: none;
+    gap: 5rem;
+    position: relative;
+  }
+  .contain__text {
+    display: none;
+  }
+  .typed {
+    display: none;
+  }
   .profile__picture {
     display: flex;
     justify-content: flex-end;
@@ -51,15 +158,15 @@ body {
     padding-right: 2rem;
     position: relative;
     top: 2rem;
-    left: 0.5rem;
+    left: 1.9rem;
   }
   .profile__size {
-    height: 30rem;
-    width: 30rem;
+    height: 20rem;
+    width: 20rem;
   }
   .profile_container {
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +178,47 @@ body {
     flex-direction: column;
     list-style: none;
     position: relative;
+    width: 20rem;
+    margin-left: 10rem;
+    padding: 5rem;
+  }
+  .project__cards--first {
+    cursor: pointer;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  .project__first__pic {
+    cursor: pointer;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  .project__second__pic {
+    cursor: pointer;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  .project__third__pic {
+    cursor: pointer;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  .project__cards--second {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+  }
+  .project__cards--third {
+    width: 40rem;
+    height: 50rem;
+    border-radius: 0.5rem;
   }
   .button__bar {
     display: flex;
@@ -120,12 +268,152 @@ body {
     background: transparent;
     font-size: 3rem;
   }
+  .about__me {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 25rem;
+    width: 70rem;
+    color: white;
+    gap: 3rem;
+    background: rgb(182, 4, 4);
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-top: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .about__who {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30rem;
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .about__info {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50rem;
+    height: 60rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    flex-shrink: 2;
+    padding-right: 1rem;
+  }
+  .mijn__cv__extra {
+    color: black;
+    text-decoration: underline;
+    border: none;
+  }
+  .read__more {
+    cursor: pointer;
+    border: none;
+    margin-top: 2rem;
+    height: 7rem;
+    width: 18rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem 1rem 1rem 1rem;
+    font-size: 2.5rem;
+  }
+  .read__more__a {
+    color: white;
+  }
+  .skills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .skills__showcase__container {
+    overflow: visible;
+  }
+  .skill__sizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    width: 100%;
+    max-width: 20rem;
+    height: 20rem;
+    background: rgb(23, 24, 23);
+    color: white;
+    border-radius: 1rem;
+  }
+  .contact__me {
+    background: rgb(182, 4, 4);
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 20rem;
+  }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+  .contact__me__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+  }
+  .contact__form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact__form input,
+.contact__form textarea {
+    margin-bottom: 10px;
+    height: 5rem;
+    width: 100%;
+  }
+  .contact__form input[type=submit] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    height: 10rem;
+    max-width: 100%;
+    background: rgb(182, 4, 4);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+  }
+  .footer__title {
+    font-size: 2.2rem;
+    font-family: sans-serif;
+  }
 }
-a:link, a:visited:hover {
-  color: rgb(9, 9, 9);
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  .contain__text {
+    height: auto; /* Pas de hoogte aan naar wens */
+  }
+  .typed {
+    font-size: 3rem; /* Pas de gewenste fontgrootte aan */
+  }
 }
-
+/* Mediaquery voor schermen kleiner dan 480px */
+@media screen and (max-width: 480px) {
+  .typed {
+    font-size: 2rem; /* Pas de gewenste fontgrootte aan */
+  }
+}
 .main__title:hover {
   cursor: default;
   color: black;
@@ -180,6 +468,13 @@ a:link, a:visited:hover {
   border: solid black 0.2rem;
 }
 
+.contact__form input[type=submit]:hover {
+  cursor: pointer;
+  color: white;
+  background: rgb(35, 32, 32);
+  transition: 0.3s;
+}
+
 .direction__projects:hover {
   cursor: pointer;
   color: white;
@@ -188,6 +483,13 @@ a:link, a:visited:hover {
 }
 
 .direction__cv:hover {
+  cursor: pointer;
+  color: white;
+  background: rgb(35, 32, 32);
+  transition: 0.3s;
+}
+
+.direction__contact:hover {
   cursor: pointer;
   color: white;
   background: rgb(35, 32, 32);
@@ -258,6 +560,11 @@ a:link, a:visited:hover {
 }
 
 .view__code-buttons:hover {
+  color: red;
+  transition: ease-in 0.4s;
+}
+
+.project__links:hover {
   color: red;
   transition: ease-in 0.4s;
 }
@@ -355,6 +662,31 @@ a:link, a:visited:hover {
     width: 100%;
   }
 }
+.about__who:hover {
+  cursor: default;
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.mijn__cv__extra:hover {
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.read__more:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.read__more__a:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
 :root {
   --color: 248, 248, 255;
   --cursor-size: 30px;
@@ -370,6 +702,7 @@ body {
   height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: sans-serif;
   font-family: sans-serif;
 }
 
@@ -394,6 +727,7 @@ body {
 }
 
 .main__title {
+  font-family: sans-serif;
   align-items: center;
   justify-content: center;
 }
@@ -401,6 +735,7 @@ body {
 .direction__buttons {
   display: flex;
   margin-bottom: 2rem;
+  gap: 3rem;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -410,8 +745,20 @@ body {
   bottom: 6rem;
   background-color: black;
   color: white;
-  height: 5rem;
-  width: 9rem;
+  height: 5.5rem;
+  width: 11rem;
+  border-radius: 5%;
+  border: none;
+  margin-left: 2rem;
+}
+
+.direction__contact {
+  position: relative;
+  bottom: 6rem;
+  background-color: black;
+  color: white;
+  height: 5.5rem;
+  width: 11rem;
   border-radius: 5%;
   border: none;
   margin-left: 2rem;
@@ -422,8 +769,8 @@ body {
   bottom: 6rem;
   background-color: black;
   color: white;
-  height: 5rem;
-  width: 9rem;
+  height: 5.5rem;
+  width: 11rem;
   border-radius: 5%;
   border: none;
   margin-left: 2rem;
@@ -520,11 +867,11 @@ body {
 .project__cards {
   display: flex;
   flex-direction: row;
-  gap: 15rem;
+  justify-content: center;
+  gap: 6.4rem;
   list-style: none;
   position: relative;
   top: 18rem;
-  left: 9.6rem;
 }
 
 .project__cards--first {
@@ -552,8 +899,8 @@ body {
 
 .project__third__pic {
   cursor: pointer;
-  height: 51rem;
-  width: 42rem;
+  height: 50rem;
+  width: 40rem;
   border-radius: 0.5rem;
   object-fit: cover;
 }
@@ -647,14 +994,10 @@ body {
   display: flex;
 }
 
-.contain__text {
-  display: inline-block;
-}
-
 .typed {
   display: flex;
   font-size: 4rem;
-  margin-left: 16rem;
+  padding-left: 2rem;
   margin-top: 20rem;
   overflow: hidden;
   white-space: nowrap;
@@ -674,8 +1017,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55rem;
-  width: 100%;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .my__skills__text {
@@ -686,30 +1029,31 @@ body {
   color: white;
   font-size: 5rem;
   position: relative;
-  bottom: 26rem;
-  left: 57rem;
+  top: 13rem;
 }
 
 .skills__showcase__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Gebruik een grid met automatische kolombreedte */
+  grid-gap: 3rem;
   max-width: 100%;
+  width: 100%;
 }
 
 .skills {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
   align-items: center;
   background: rgb(150, 31, 31);
   height: 40rem;
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
   list-style: none;
-  margin-right: 15rem;
-  border-radius: 10px 10px 10px 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1rem;
 }
 
 .skill__sizes {
@@ -718,18 +1062,19 @@ body {
   align-items: center;
   padding-top: 9rem;
   font-size: 8rem;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   height: 30rem;
   background: rgb(23, 24, 23);
   color: white;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 1rem;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
-  perspective: 1000px; /* Verwijder dit als je het 3D-effect niet wilt */
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -746,7 +1091,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -769,6 +1114,140 @@ body {
 .skills__name__title {
   position: relative;
   bottom: 2rem;
+}
+
+.about__me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 25rem;
+  width: 90rem;
+  color: white;
+  gap: 3rem;
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.about__who {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30rem;
+  font-size: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.about__info {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  font-size: 2.7rem;
+  padding-right: 1rem;
+}
+
+.mijn__cv__extra {
+  color: black;
+  text-decoration: underline;
+  border: none;
+}
+
+.read__more {
+  cursor: pointer;
+  border: none;
+  margin-top: 2rem;
+  height: 7rem;
+  width: 18rem;
+  color: white;
+  background-color: black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+.read__more__a {
+  color: white;
+}
+
+.contact__me {
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.contact__me__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  padding-left: 7.1rem;
+  gap: 2rem;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 10px;
+  height: 5rem;
+  width: 100%;
+}
+
+.contact__form input[type=submit] {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__icons {
+  background-color: black;
+  margin-right: 1rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 35rem;
+  height: 10rem;
+  max-width: 100%;
+  background: rgb(182, 4, 4);
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  font-size: 3.5rem;
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

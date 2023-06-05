@@ -32,33 +32,38 @@
         </a>
         </li>
     </ul>
+
     <div class="search-container">
-        <form class="search-form" onsubmit="search(event)">
+        <form class="search-form">
           <input type="text" id="search-input" placeholder="Zoeken...">
           <button class="submit__search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-    </div>
-    
+      </div>
+      
     <article class="direction__buttons">
         <button class="direction__projects" onclick="scrollToProjects()">
-          <p>My Projects</p>
+          <p>Mijn Projects</p>
         </button>
-
+        <button class="direction__contact" onclick="scrollToContact()">
+            <p>Contact</p>
+          </button>
+    
         <a href="/img/Uday-Singh-CV.png">
-        <button class="direction__cv" >My CV</button>
+        <button class="direction__cv" >Mijn CV</button>
     </a> 
        
+
 
    
       </article>
       
 
-    <article class="floating__sidenav">
+    <!-- <article class="floating__sidenav">
         <i class="fa-solid fa-earth-europe floating__icon1"></i>
         <i class="fa-solid fa-moon floating__icon2" id="js--darkmode"></i>
         <i class="fa-solid fa-eye floating__icon3"></i>
     </article>  
-    
+     -->
 </header>
 
 
@@ -87,19 +92,25 @@
             <img  class="project__first__pic"  src="./img/project-agenda.webp" alt="" srcset="">
             <article class="button__bar">
                 <article class="view__code-buttons">
-                    <i class="fa-brands fa-github"></i> <p>View Source code -> </p>
-    
+                    <i class="fa-brands fa-github"></i> 
+                    <a class="project__links" href="https://github.com/Uday-Singh1/agenda-app-fro-m8">
+                        <p>Bekijk Source Code > </p>
+                    </a>
                 </article>
             </article>
         </li>
         <li class="project__cards--second">
             <img  class="project__second__pic"  src="./img/fancy-card.webp" alt="" srcset="">
+           
             <article class="button__bar">
 
                 <article class="view__code-buttons">
                 <i class="fa-brands fa-github"></i>
-                <p>View Source code -> </p>
+                <a  class="project__links" href="https://github.com/Uday-Singh1/Fro-f1m4/tree/main/fancy-card">
+                    <p>Bekijk Source Code > </p>
 
+                </a>
+         
             </article>
             </article>
         </li>
@@ -109,8 +120,10 @@
 
                 <article class="view__code-buttons">
                     <i class="fa-brands fa-github"></i>
-                    <p>View Source code -> </p>
+                    <a class="project__links" href="https://github.com/Uday-Singh1/encrypter-fro-m8">
+                    <p>Bekijk Source Code ></p>
     
+                    </a>
                 </article>
             </article>
         </li>
@@ -118,11 +131,24 @@
     </ul>
    </section>
    <article class="button__wrapper">
-    <button class="view__more__button">View more</button>
+    <a href="/projecten.html" class="view__more__button">Zie Meer</a>
 </article>
 
+<section class="about__me">
+    <h1 class="about__who">Wie ben ik?</h1>
+    <article class="about__info">
+        <p>Mijn naam is Uday Singh, ik vind programmeren heel leuk en ik krijg nooit genoeg van vette applicaties bouwen.
+ ik hou me ook vaak bezig met designing en dat kan je hier ook weer terug zien. wat betreft informatie over mijn onderwijs en werk ervaring kunt u vinden in  <a href="/img/Uday-Singh-CV.png" class="mijn__cv__extra">
+    Mijn Cv
+</a></p>
+    </article>
+    <a href="/index.html">
+        <button class="read__more">Lees Meer ></button>
+      </a>
+</section>
+
 <section class="skills__showcase">
-    <h1 class="my__skills__text">My Skills</h1>
+    <h1 class="my__skills__text">Mijn Vaardigheden</h1>
     <article class="skills__showcase__container">
         <ul class="skills">
             <li class="skill__sizes">
@@ -186,11 +212,55 @@
     </article>
 </section>
 
+<section class="contact__me">
+    <form action="" class="contact__form">
+        <div class="contact__me__title-container">
+            <h2 class="contact__me__title">Contacteer me hier
+                <a href="mailto:udaysngjobs@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+            </a>
+            </h2>
+        </div>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Verzenden">
+      
+    </form>
+</section>
+
+
+
+
    
    <!-- Custom Cursor
 	<article class="custom-cursor"></article>
  -->
 
+
+ <footer>
+    <p class="footer__title">Gemaakt Door Uday Singh</p>
+
+    <article class="footer__icons">
+        <a href="https://www.linkedin.com/in/uday-singh-6ab410240/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:udaysngjobs@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    
+        <a href="https://github.com/Uday-Singh1">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    
+    </article>
+ </footer>
 </body>
 
 
